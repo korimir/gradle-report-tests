@@ -160,6 +160,6 @@ span.code pre {
     width: 700px;
 }
 
-span.code pre.stderr {
+span.code pre span.stderr {
   color: red;
 }
