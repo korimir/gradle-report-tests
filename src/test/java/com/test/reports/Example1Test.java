@@ -1,5 +1,6 @@
 package com.test.reports;
 
+import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.slf4j.Logger;
@@ -11,6 +12,11 @@ public class Example1Test {
 	@BeforeClass
 	public static void setup() {
 		LOGGER.debug("Writing setup for this examples");
+	}
+	
+	@AfterClass
+	public static void shutdown() {
+		LOGGER.debug("Complete work");
 	}
 
 	@Test
@@ -35,4 +41,6 @@ public class Example1Test {
 		LOGGER.error("Just print 2");
 		System.err.println("Error 2");
 	}
+	
+	
 }
